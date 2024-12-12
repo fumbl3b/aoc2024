@@ -36,6 +36,7 @@ for equation in data:
         # For each possible value so far, extend with + and *
         new_results = set()
         for val in dp[i]:
+            new_results.add(int(str(val) + str(current_num)))
             new_results.add(val + current_num)
             new_results.add(val * current_num)
         dp[i+1] = new_results
