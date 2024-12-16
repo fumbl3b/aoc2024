@@ -35,7 +35,7 @@ def check_in_range(x,y):
     return True
 
 antinodes = set()
-
+# plot antinodes from pair
 for pair in pairs:
     a, b = pair[0], pair[1]
     ax, ay = a
@@ -48,8 +48,5 @@ for pair in pairs:
     if check_in_range(ant_b[0], ant_b[1]):
         antinodes.add(ant_b)
 
-# plot antinodes from pair
 print(antinodes)
 print(len(antinodes))
-# count unique antinodes
-# print(antinodes.count())
