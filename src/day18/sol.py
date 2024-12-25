@@ -1,7 +1,7 @@
 from collections import deque
 
 # Read and parse input from 'input.txt'
-with open('input.txt', 'r') as f:
+with open('./src/day18/input.txt', 'r') as f:
     orig_input_points = [[int(x) for x in line.strip().split(',')] for line in f]
 
 # Limit to the first 1024 lines initially
